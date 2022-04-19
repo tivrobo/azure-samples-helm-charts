@@ -2,5 +2,7 @@
 title: "Welcome to Azure Kubernetes Service (AKS)"
 
 # Service controlls
-serviceName: aks-helloworld
-serviceType: ClusterIP
+service:
+  name: aks-helloworld
+  type: ClusterIP
+  annotations: {}
