@@ -24,13 +24,13 @@ spec:
 apiVersion: v1
 kind: Service
 metadata:
-  name: {{ .Values.serviceName }}
-    {{- with .Values.service.annotations }}
+  name: {{ .Values.service.name }}
+  {{- with .Values.service.annotations }}
   annotations:
     {{- toYaml . | nindent 4 }}
   {{- end }}
 spec:
-  type: {{ .Values.serviceType }}
+  type: {{ .Values.service.type }}
   ports:
   - port: 80
   selector:
