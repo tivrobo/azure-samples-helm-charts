@@ -7,7 +7,7 @@ The Azure Vote application is a simple sample used throughout the Azure Containe
 Add the Azure Samples chart repository.
 
 ```
-helm repo add azure-samples https://azure-samples.github.io/helm-charts/
+helm repo add azure-samples https://tivrobo.github.io/azure-samples-helm-charts/
 ```
 
 Install the chart.
